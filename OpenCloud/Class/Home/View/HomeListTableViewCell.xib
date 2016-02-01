@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeListTableViewCell" rowHeight="66" id="KGk-i7-Jjw" customClass="HomeListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fileIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="5wX-li-L07">
+                        <rect key="frame" x="18" y="11" width="49" height="43"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIr-Ib-tU4">
+                        <rect key="frame" x="75" y="11" width="230" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhd-rg-4hD">
+                        <rect key="frame" x="75" y="33" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCz-7h-5k2">
+                        <rect key="frame" x="282" y="32" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iIr-Ib-tU4" firstAttribute="top" secondItem="5wX-li-L07" secondAttribute="top" id="8Mj-Rd-FEN"/>
+                    <constraint firstItem="RCz-7h-5k2" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-10" id="SY2-3s-DR4"/>
+                    <constraint firstItem="5wX-li-L07" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="YTF-Va-bvC"/>
+                    <constraint firstAttribute="centerY" secondItem="5wX-li-L07" secondAttribute="centerY" id="axD-zS-r9b"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iIr-Ib-tU4" secondAttribute="trailing" constant="20" id="e2V-SL-0Pe"/>
+                    <constraint firstItem="Nhd-rg-4hD" firstAttribute="centerY" secondItem="RCz-7h-5k2" secondAttribute="centerY" id="m8M-y7-DD2"/>
+                    <constraint firstItem="iIr-Ib-tU4" firstAttribute="leading" secondItem="Nhd-rg-4hD" secondAttribute="leading" id="rtC-Lo-kd9"/>
+                    <constraint firstItem="iIr-Ib-tU4" firstAttribute="leading" secondItem="5wX-li-L07" secondAttribute="trailing" constant="8" id="tWT-eb-LGK"/>
+                    <constraint firstItem="Nhd-rg-4hD" firstAttribute="top" secondItem="iIr-Ib-tU4" secondAttribute="bottom" constant="1.5" id="w70-sP-DUD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.024912191470000001" green="0.93306107949999995" blue="0.89681670440000005" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="nameLabel" destination="iIr-Ib-tU4" id="v5b-Bi-1z4"/>
+                <outlet property="picImageView" destination="5wX-li-L07" id="iRu-Qc-ciV"/>
+                <outlet property="sizeLabel" destination="RCz-7h-5k2" id="hBB-X7-iGk"/>
+                <outlet property="timeLabel" destination="Nhd-rg-4hD" id="83A-JD-TuB"/>
+            </connections>
+            <point key="canvasLocation" x="286.5" y="269"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fileIcon.png" width="49" height="43"/>
+    </resources>
+</document>
